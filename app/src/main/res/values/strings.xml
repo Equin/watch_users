@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">WatchUsers</string>
+
+    <string name="users_fragment_label">Users</string>
+    <string name="user_info_fragment_label">User Info</string>
+    <string name="fragment_users_list_no_more_pages">There are no more pages</string>
+    <string name="fragment_base_no_internet_connection">No network connection</string>
+</resources>

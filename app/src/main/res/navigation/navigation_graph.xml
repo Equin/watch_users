@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            xmlns:tools="http://schemas.android.com/tools" android:id="@+id/navigation_graph"
+            app:startDestination="@id/usersFragment">
+
+    <fragment android:id="@+id/usersFragment"
+              android:name="watchusers.testtask.com.ui.view.fragment.UsersFragment"
+              android:label="@string/users_fragment_label"
+              tools:layout="@layout/fragment_users_list">
+
+        <action android:id="@+id/action_usersFragment_to_userInfoFragment"
+                app:destination="@id/userInfoFragment"
+                app:enterAnim="@anim/slide_in_right"
+                app:exitAnim="@anim/slide_out_left"
+                app:popEnterAnim="@anim/slide_in_left"
+                app:popExitAnim="@anim/slide_out_right"/>
+    </fragment>
+
+    <fragment android:id="@+id/userInfoFragment"
+              android:name="watchusers.testtask.com.ui.view.fragment.UserInfoFragment"
+              android:label="@string/user_info_fragment_label"
+              tools:layout="@layout/fragment_user_info">
+
+        <argument android:name="userId" app:argType="integer"/>
+
+    </fragment>
+
+</navigation>
