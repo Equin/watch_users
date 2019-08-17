@@ -1,6 +1,16 @@
 # watch_users
 
-It is a an application which has two sreens (Users list and user info page)
+It is a test task application with two screens.
+1. List of users got by Retrofit API call, disolayed with image and name.
+2. User info screen, with image, name and email.
+
+Navigation made by Navigation Architecture Component.
+API calls made with Retrofit+OkHttp+GSON
+Dependency injections made by Kodein
+Ability to work offline made by Room (saving/getting information from data base)
+For easy image loading used Glide library
+To make asynchronous API calls and DB transactions and returning result in proper thread used RxJava2
+
 
 ## Screenshots
 
